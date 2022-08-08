@@ -1,8 +1,8 @@
 package ru.netology.service;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 
 public class CashbackHackServiceTest {
 
@@ -14,7 +14,7 @@ public class CashbackHackServiceTest {
         int expected = 300;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class CashbackHackServiceTest {
         int expected = 100;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class CashbackHackServiceTest {
         int expected = 10;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class CashbackHackServiceTest {
         int expected = 1000;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
     // тест падает, так как предлагает докупить еще на 1000
@@ -51,7 +51,7 @@ public class CashbackHackServiceTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 
 }
