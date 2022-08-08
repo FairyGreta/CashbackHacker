@@ -14,7 +14,7 @@ public class CashbackHackServiceTest {
         int expected = 300;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class CashbackHackServiceTest {
         int expected = 100;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
     @Test
@@ -32,7 +32,7 @@ public class CashbackHackServiceTest {
         int expected = 10;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class CashbackHackServiceTest {
         int expected = 1000;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
     // тест падает, так как предлагает докупить еще на 1000
@@ -51,7 +51,7 @@ public class CashbackHackServiceTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        assertEquals(expected, actual);
+        assertEquals(actual, expected);
     }
 
 }
